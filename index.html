@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600&family=Cookie&family=Vollkorn:ital,wght@0,400;0,800;1,400;1,800&display=swap" rel="stylesheet">
+    <title>Belajar Tailwind</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+
+  <nav class="bg-darkBlue-600 dark:bg-gray-500">
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-darkBlue-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-darkBlue-200 dark:hover:bg-gray-400 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-100 duration-300" aria-controls="mobile-menu" aria-expanded="false" id="menu-button">
+            <span class="sr-only">Open main menu</span>
+            
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+            </svg> 
+
+            
+          </button>
+        </div>
+        <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start" id="dropdown-id">
+          <div class="flex-shrink-0 flex items-center hover:scale-150 animate-bounce">
+            <img class="lg:hidden sm:hidden hidden h-8 w-auto rounded-full border-2 border-white" src="assets/img/logo.jpg" alt="foto logo">
+            <img class="hidden lg:block sm:block h-8 w-auto border-white border-2 rounded-full" src="assets/img/logo.jpg" alt="foto logo">
+          </div>
+          <div class="hidden sm:block sm:ml-6">
+            <div class="flex space-x-4 font-alegreya font-bold">
+
+              <a href="#" class="text-gray-300 px-3 py-2 rounded-full text-sm font-small hover:bg-darkBlue-500 hover:ring-1 hover:ring-darkBlue-400 hover:text-gray-100 active:bg-darkBlue-500 active:ring-emerald-400 active:text-emerald-300 dark:hover:bg-gray-600 dark:active:bg-gray-500 dark:active:ring-gray-400 dark:active:text-white transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-100 duration-300">Dashboard</a> 
+            
+            </div>
+          </div>
+        </div>
+        <!-- toggle dark mode -->
+        <div class="flex relative font-thin font-alegreya">
+          <span class="text-gray-300 text-sm mr-2">Light</span>
+          <input type="checkbox" class="" id="toggle" hidden>
+          <label for="toggle">
+            <div class="w-9 h-5 bg-slate-600 rounded-full flex items-center p-1 cursor-pointer">
+              <div class="w-4 h-4 rounded-full bg-white toggle-circle"></div>
+            </div>
+          </label>
+          <span class="text-gray-300 text-sm ml-2">Dark</span>         
+        </div> 
+         
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div  class="sm:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 font-alegreya hidden" id="menu">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#" class="text-gray-300 hover:bg-darkBlue-500 hover:text-white block px-3 py-2 rounded-md text-base font-bold dark:hover:bg-gray-600">Dashboard</a>
+      </div>
+    </div>
+  </nav>
+  <!-- isi konten disini -->
+
+ <section id="top">
+  <div class="sm:w-5/12 lg:w-2/12 w-5/12 mx-auto my-10">
+    <img src="assets/img/poto_profile.jpg" alt="" class="rounded-full border-4  border-darkBlue-500 shadow-slate-700 hover:border-darkBlue-600 hover:shadow-2xl hover:scale-150 hover:transform-gpu dark:hover:border-gray-500 dark:border-slate-100">
+  </div>
+  <div class="mx-auto my-10 flex items-center font-alegreya justify-center animate-pulse">
+    <p class="font-extrabold text-3xl text-center sm:text-4xl lg:text-5xl text-darkBlue-400 dark:text-black">DEDE AFTAFIANDI</p>    
+  </div>
+  <div class="mx-auto my-10 -mt-10 flex items-center font-alegreya justify-center animate-pulse">
+    <p class="font-extrabold text-2xl text-center sm:text-3xl lg:text-4xl text-darkBlue-400 dark:text-black">Web Programmer</p>    
+  </div>
+ </section>
+
+ <hr class="-mt-8 border-2 border-darkBlue-600 max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-4xl mx-auto  animate-pulse dark:border-slate-700">
+ 
+<section id="about">
+  <div class="sm:max-w-xl md:max-w-2xl lg:max-w-4xl max-w-sm my-10 border-r-8 rounded-xl mx-auto p-5 shadow-lg font-alegreya group border-r-darkBlue-600 hover:border-r-8 hover:border-r-emerald-500 hover:shadow-xl dark:bg-white dark:border-r-slate-500 dark:hover:border-r-slate-700">
+    <div class="font-bold text-darkBlue-500 text-xl sm:text-2xl group-hover:text-emerald-600 dark:text-slate-700">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+      </svg>
+      <p class="-mt-6 ml-7 animate-pulse group-hover:text-emerald-600">Profil</p>
+    </div>
+    <div class="font-thin text-gray-500 text-justify group-hover:text-black">
+      <p>Saya memiliki pikiran yang jernih dan login dengan pendekatan praktis untuk memecahkan masalah dan dorongan untuk menyelesaikan masalah. Saya memiliki lebih dari 2 tahun pengalaman dalam bidang programmer dan IT Support. Saya ingin sekali belajar, saya menikmati mengatasi tantangan, dan saya memiliki minat yang tulus dalam dunia programmer dan IT support.</p>
+    </div>
+    <div class="mt-4 font-bold text-darkBlue-500 group-hover:text-emerald-600 dark:text-slate-700">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+      </svg>   
+      <p class="-mt-6 ml-7 font-thin text-gray-500 text-justify group-hover:text-black"><span class="text-darkBlue-400 animate-pulse group-hover:text-black dark:text-slate-700">Mail</span> : aftafiandi.dede94@gmail.com</p>
+     </div>
+     <div class="lg:ml-72 lg:-mt-5 mt-2 font-bold text-darkBlue-500 group-hover:text-emerald-600 dark:text-slate-700">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+      </svg>   
+      <p class="-mt-6 ml-7 font-thin text-gray-500 text-justify group-hover:text-black"><span class="text-darkBlue-400 animate-pulse group-hover:text-black dark:text-slate-700">Mail</span> : aftafiandi.dede94@gmail.com</p>
+     </div>
+  </div>
+</section>
+
+<section id="'personal">
+
+   <div class="sm:max-w-xl md:max-w-2xl lg:max-w-4xl max-w-sm my-10 border-r-8 rounded-xl mx-auto p-5 shadow-lg font-alegreya group border-r-darkBlue-600 hover:border-r-8 hover:border-r-emerald-500 hover:shadow-xl dark:bg-white dark:border-r-slate-500 dark:hover:border-r-slate-700">
+      
+    </div>
+
+    <div class="mx-auto p-5 w-6/12">
+      <div class="w-6/12 border-4">
+
+      </div>
+    </div>
+
+  
+
+</section>
+
+
+
+  <script>
+    const checkbox = document.querySelector('#toggle');
+    const htmlMode = document.querySelector('html');
+    const bodyGround = document.querySelector('body');
+
+    checkbox.addEventListener('click', function () {
+      checkbox.checked ? htmlMode.classList.add('dark') : htmlMode.classList.remove('dark');
+
+      checkbox.checked ? bodyGround.classList.add('bg-gray-300') : bodyGround.classList.remove('bg-gray-300');
+    });
+
+    const button = document.querySelector('#menu-button');
+    const menu = document.querySelector('#menu');
+
+    button.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+  </script>
+</body>
+</html>
