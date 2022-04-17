@@ -1,17 +1,16 @@
-var mysql = {
+var options = {
     chart: {
         height: 180,
         type: 'radialBar',
         fontFamily: 'Alegreya',
     },
-    series: [70],
+    series: [75],
     labels: ['MySQL'],
     fill: {
-        colors: '#0052cc',
+        colors: '#1a1a1a'
     }
-
 }
-new ApexCharts(document.querySelector("#mysql"), mysql).render();
+new ApexCharts(document.querySelector("#min-dark-mysql"), options).render();
 
 var options = {
     chart: {
@@ -22,10 +21,10 @@ var options = {
     series: [50],
     labels: ['Postgree'],
     fill: {
-        colors: '#0052cc'
+        colors: '#1a1a1a'
     }
 }
-new ApexCharts(document.querySelector("#postgresql"), options).render();
+new ApexCharts(document.querySelector("#min-dark-postgresql"), options).render();
 
 var options = {
     chart: {
@@ -36,10 +35,10 @@ var options = {
     series: [75],
     labels: ['PHP'],
     fill: {
-        colors: '#0052cc'
+        colors: '#1a1a1a'
     }
 }
-new ApexCharts(document.querySelector("#php"), options).render();
+new ApexCharts(document.querySelector("#min-dark-php"), options).render();
 
 var options = {
     chart: {
@@ -50,10 +49,10 @@ var options = {
     series: [35],
     labels: ['Javascript'],
     fill: {
-        colors: '#0052cc'
+        colors: '#1a1a1a'
     }
 }
-new ApexCharts(document.querySelector("#javascript"), options).render();
+new ApexCharts(document.querySelector("#min-dark-javascript"), options).render();
 
 var options = {
     chart: {
@@ -64,10 +63,10 @@ var options = {
     series: [50],
     labels: ['Tailwind'],
     fill: {
-        colors: '#0052cc'
+        colors: '#1a1a1a'
     }
 }
-new ApexCharts(document.querySelector("#tailwind"), options).render();
+new ApexCharts(document.querySelector("#min-dark-tailwind"), options).render();
 
 var options = {
     chart: {
@@ -78,10 +77,10 @@ var options = {
     series: [35],
     labels: ['CSS'],
     fill: {
-        colors: '#0052cc'
+        colors: '#1a1a1a'
     }
 }
-new ApexCharts(document.querySelector("#css"), options).render();
+new ApexCharts(document.querySelector("#min-dark-css"), options).render();
 
 var options = {
     chart: {
@@ -92,10 +91,10 @@ var options = {
     series: [77],
     labels: ['Laravel'],
     fill: {
-        colors: '#0052cc'
+        colors: '#1a1a1a'
     }
 }
-new ApexCharts(document.querySelector("#laravel"), options).render();
+new ApexCharts(document.querySelector("#min-dark-laravel"), options).render();
 
 var options = {
     chart: {
@@ -106,10 +105,10 @@ var options = {
     series: [45],
     labels: ['Corel Draw'],
     fill: {
-        colors: '#0052cc'
+        colors: '#1a1a1a'
     }
 }
-new ApexCharts(document.querySelector("#corel"), options).render();
+new ApexCharts(document.querySelector("#min-dark-corel"), options).render();
 
 var options = {
     chart: {
@@ -120,10 +119,10 @@ var options = {
     series: [15],
     labels: ['Adbe Photoshop'],
     fill: {
-        colors: '#0052cc'
+        colors: '#1a1a1a'
     }
 }
-new ApexCharts(document.querySelector("#photoshop"), options).render();
+new ApexCharts(document.querySelector("#min-dark-photoshop"), options).render();
 
 var options = {
     chart: {
@@ -134,10 +133,10 @@ var options = {
     series: [50],
     labels: ['Git'],
     fill: {
-        colors: '#0052cc'
+        colors: '#1a1a1a'
     }
 }
-new ApexCharts(document.querySelector("#git"), options).render();
+new ApexCharts(document.querySelector("#min-dark-git"), options).render();
 
 var options = {
     chart: {
@@ -148,7 +147,7 @@ var options = {
     series: [50],
     labels: ['Linux Server'],
     fill: {
-        colors: '#0052cc'
+        colors: '#1a1a1a'
     }
 }
-new ApexCharts(document.querySelector("#linux"), options).render();
+new ApexCharts(document.querySelector("#min-dark-linux"), options).render();

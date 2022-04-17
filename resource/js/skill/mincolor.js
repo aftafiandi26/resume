@@ -11,7 +11,7 @@ var mysql = {
     }
 
 }
-new ApexCharts(document.querySelector("#mysql"), mysql).render();
+new ApexCharts(document.querySelector("#min-mysql"), mysql).render();
 
 var options = {
     chart: {
@@ -25,7 +25,7 @@ var options = {
         colors: '#0052cc'
     }
 }
-new ApexCharts(document.querySelector("#postgresql"), options).render();
+new ApexCharts(document.querySelector("#min-postgresql"), options).render();
 
 var options = {
     chart: {
@@ -39,7 +39,7 @@ var options = {
         colors: '#0052cc'
     }
 }
-new ApexCharts(document.querySelector("#php"), options).render();
+new ApexCharts(document.querySelector("#min-php"), options).render();
 
 var options = {
     chart: {
@@ -53,7 +53,7 @@ var options = {
         colors: '#0052cc'
     }
 }
-new ApexCharts(document.querySelector("#javascript"), options).render();
+new ApexCharts(document.querySelector("#min-javascript"), options).render();
 
 var options = {
     chart: {
@@ -67,7 +67,7 @@ var options = {
         colors: '#0052cc'
     }
 }
-new ApexCharts(document.querySelector("#tailwind"), options).render();
+new ApexCharts(document.querySelector("#min-tailwind"), options).render();
 
 var options = {
     chart: {
@@ -81,7 +81,7 @@ var options = {
         colors: '#0052cc'
     }
 }
-new ApexCharts(document.querySelector("#css"), options).render();
+new ApexCharts(document.querySelector("#min-css"), options).render();
 
 var options = {
     chart: {
@@ -95,7 +95,7 @@ var options = {
         colors: '#0052cc'
     }
 }
-new ApexCharts(document.querySelector("#laravel"), options).render();
+new ApexCharts(document.querySelector("#min-laravel"), options).render();
 
 var options = {
     chart: {
@@ -109,7 +109,7 @@ var options = {
         colors: '#0052cc'
     }
 }
-new ApexCharts(document.querySelector("#corel"), options).render();
+new ApexCharts(document.querySelector("#min-corel"), options).render();
 
 var options = {
     chart: {
@@ -123,7 +123,7 @@ var options = {
         colors: '#0052cc'
     }
 }
-new ApexCharts(document.querySelector("#photoshop"), options).render();
+new ApexCharts(document.querySelector("#min-photoshop"), options).render();
 
 var options = {
     chart: {
@@ -137,7 +137,7 @@ var options = {
         colors: '#0052cc'
     }
 }
-new ApexCharts(document.querySelector("#git"), options).render();
+new ApexCharts(document.querySelector("#min-git"), options).render();
 
 var options = {
     chart: {
@@ -151,4 +151,4 @@ var options = {
         colors: '#0052cc'
     }
 }
-new ApexCharts(document.querySelector("#linux"), options).render();
+new ApexCharts(document.querySelector("#min-linux"), options).render();
